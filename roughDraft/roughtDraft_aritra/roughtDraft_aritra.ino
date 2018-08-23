@@ -18,10 +18,10 @@ const int RtrigPin = A0 ;
 const int RechoPin = A1;
 
 // defines variables
-long duration;
-int distance;
-int Ldistance;
-int Rdistance;
+long duration=0;
+int distance=0;
+int Ldistance=0;
+int Rdistance=0;
 
 void setup() {
   // put your setup code here, to run once:
@@ -63,7 +63,7 @@ void loop() {
 }
 
 
-void ultra(int trigPin, int echoPin) {
+int ultra(int trigPin, int echoPin) {
   duration = 0;
   distance = 0;
 
