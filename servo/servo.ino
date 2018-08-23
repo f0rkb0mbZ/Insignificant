@@ -28,7 +28,7 @@ void loop() {
     servoRight.write(rpos);// tell servo to go to position in variable 'pos'
     delay(15);                       // waits 15ms for the servo to reach the position
   }
-   delay(500);
+  delay(500);
   for (lpos = 180, rpos = 0; lpos >= 0 && rpos <= 180 ; lpos -= 5, rpos += 5) { // goes from 0 degrees to 180 degrees
     // in steps of 1 degree
     servoLeft.write(lpos); // tell servo to go to position in variable 'pos'
